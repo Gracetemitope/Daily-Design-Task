@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(245, 243, 243);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 650px;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    /* justify-content: space-around; */
+    margin-left: 40%;
+    margin-top: 40px;
+    background-color: inherit;
+    box-shadow: 3px 3px 4px 4px rgb(235, 229, 229);
+    
+}
+.blue-container {
+    width: inherit;
+    border-radius: 15px 15px 0px 0px;
+    height: 200px;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+#blue {
+    display: flex;
+    width: inherit;
+    font-size: 0.8rem;
+}
+#blue > div {
+    margin: 10px;
+    display: flex;
+    margin-left: 5px;
+}
+.fa-wifi, #battery, .fa-battery-full, #sketch {
+    margin-left: 5px;
+
+}
+#blue > div:nth-child(3) {
+    justify-content: flex-end;
+}
+#blue > div:nth-child(2), #blue > div:nth-child(1)  {
+    flex: 1;
+}
+#arrow {
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+    font-size: 1.2rem;
+}
+#arrow p {
+    margin-left: 30px;
+    margin-top: -5px;
+    font-weight: bolder;
+    font-family: 'Noto Sans', sans-serif;
+    /* font-size: 1.5rem; */
+    /* margin-top: 30px; */
+}
+.white-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 500px;
+    margin-left: 8%;
+    margin-top: -20%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 4px rgb(250, 246, 246);
+}
+.white-container > div {
+    display: flex;
+    margin: 30px;
+    /* width: inherit; */
+    height: 0px;
+    /* margin-bottom: 50px; */
+    /* margin-top: 50px; */
+
+}
+.white-container > div:nth-child(7) {
+    flex: 1;
+}
+.white-container > div:nth-child(1) {
+margin-top: 50px;
+}
+img {
+    width: 20px;
+    height: 20px;
+}
+.white-container > div p {
+    margin-left: 10px;
+}
+.fa-angle-right {
+    margin-left: auto;
+    color: lightgrey;
+}
+@media (max-width: 760px) {
+    .container {
+        margin: 5px;
+    }
+}
